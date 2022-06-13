@@ -4,14 +4,13 @@ import { AiOutlineClose } from "react-icons/ai";
 export default function Cart({
   showCart,
   addedToCart,
+  setAddedToCart,
   addToCart,
   removeItem,
   countItems,
   getCartTotal,
   getCartTotalInstallments,
 }) {
-  console.log(countItems(), "main");
-
   return (
     <section className='cart'>
       <div className='cart-close'>
@@ -38,6 +37,8 @@ export default function Cart({
                   item={item}
                   addToCart={addToCart}
                   removeItem={removeItem}
+                  addedToCart={addedToCart}
+                  setAddedToCart={setAddedToCart}
                 />
               );
             })}

@@ -550,9 +550,16 @@ span {
   padding-block: 0.5rem;
 }
 .item_cart--close {
-  color: black;
+  background-color: var(--primary);
   font-weight: 800;
   font-size: 1.3rem;
+  color: black !important;
+}
+.item_cart--close:hover {
+  color: white !important;
+}
+.item_cart--close {
+  fill: black;
 }
 
 .item_cart {
@@ -561,7 +568,7 @@ span {
 }
 
 .item_cart--details {
-  padding: 0rem 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
 
 .cart_subtotal {
@@ -587,6 +594,9 @@ span {
 .button_decrease {
   background-color: #16151a;
   border-radius: 1px;
+}
+.black {
+  background-color: black;
 }
 .button_increase {
   background-color: black;
@@ -626,5 +636,3 @@ span {
   font-size: 0.6rem;
   padding: 0.2rem 0.5rem;
 }
-
-/* Loader  */

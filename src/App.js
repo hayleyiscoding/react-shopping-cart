@@ -1,3 +1,4 @@
+// Not yet mobile responsive!
 import ItemContainer from "./components/ItemContainer";
 import Sizes from "./components/Sizes";
 import { useEffect, useState } from "react";
@@ -105,6 +106,7 @@ export default function App() {
           <Cart
             showCart={showCart}
             addedToCart={addedToCart}
+            setAddedToCart={setAddedToCart}
             addToCart={addToCart}
             countItems={countItems}
             removeItem={removeItem}
